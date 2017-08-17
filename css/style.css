@@ -1,7 +1,335 @@
+html,
 body {
-    height: 2000px;
+	min-width: 1000px;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
 }
 
-svg {
-    position: fixed;
+.skrollable {
+	position: fixed;
+	z-index: 100;
+}
+
+.skrollr-mobile .skrollable {
+	position: absolute;
+}
+
+.skrollable .skrollable {
+	position: absolute;
+}
+
+.skrollable .skrollable .skrollable {
+	position: static;
+}
+
+.scene1 {
+	height: 100%;
+	width: 100%;
+	background-color: #333;
+}
+
+.start {
+	overflow: hidden;
+	height: 100hv;
+}
+
+.start-img {
+	z-index: 10;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	background-image: url(../open.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.circle1 {
+	z-index: 1;
+	width: 600px;
+	height: 600px;
+	position: fixed;
+	top: 1%;
+	left: 1%;
+}
+
+.circle2 {
+	width: 1px;
+	height: 1px;
+	position: fixed;
+	top: 50%;
+	left: 55%;
+}
+
+.circle3 {
+	width: 1px;
+	height: 1px;
+	position: fixed;
+	top: 80%;
+	left: 30%;
+}
+
+.circle4 {
+	width: 1px;
+	height: 1px;
+	position: fixed;
+	left: 90%;
+}
+
+.scene2 {
+	height: 100%;
+	width: 100%;
+	background-color: #e1c033;
+}
+
+.tsuru {
+	width: 400px;
+	height: 400px;
+}
+
+.kumo1,
+.kumo2 {
+	width: 100%;
+	height: 100%;
+}
+
+.kumo1 {
+	transform: translate(0px, -200px);
+}
+
+.kumo2 {
+	transform: translate(0px, 100px);
+}
+
+.scene3 {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.sky {
+	height: 60%;
+	width: 100%;
+}
+
+.sun {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.sea {
+	width: 101%;
+}
+
+.scene4 {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.hiyoko {
+	width: 24.66%;
+	height: 25%;
+}
+
+.boxa {
+	height: 25%;
+	width: 200%;
+	background-color: #4b66bd;
+}
+
+.hiyokob {
+	top: 25%;
+}
+
+.boxb {
+	height: 25%;
+	width: 200%;
+	background-color: #4bbd6a;
+	top: 25%;
+}
+
+.hiyokoc {
+	top: 50%;
+}
+
+.boxc {
+	height: 25%;
+	width: 200%;
+	background-color: #bd2694;
+	top: 50%;
+}
+
+.hiyokod {
+	top: 75%;
+}
+
+.boxd {
+	height: 25%;
+	width: 200%;
+	background-color: #bda24b;
+	top: 75%;
+}
+
+.hiyokoa2,
+.hiyokob2,
+.hiyokod2,
+.hiyokoc2 {
+	transform: scale(1.6);
+}
+
+.hiyokob2 {
+	left: 25%;
+}
+
+.hiyokoc2 {
+	left: 50%;
+}
+
+.hiyokod2 {
+	left: 75%;
+}
+
+.boxa2 {
+	width: 25%;
+	height: 150%;
+	background-color: #4b66bd;
+}
+
+.boxb2 {
+	width: 25%;
+	height: 150%;
+	background-color: #4bbd6a;
+	left: 25%;
+}
+
+.boxc2 {
+	width: 25%;
+	height: 150%;
+	background-color: #bd2694;
+	left: 50%;
+}
+
+.boxd2 {
+	width: 25%;
+	height: 150%;
+	background-color: #bda24b;
+	left: 75%;
+}
+
+.scene5 {
+	height: 100%;
+	width: 100%;
+	background-color: #557cc3;
+}
+
+.daibutsu {
+	width: 100%;
+	height: 100%;
+	transform-origin: center 100px 0;
+}
+
+.scene6 {
+	background-color: #d6c6af;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.jinrikisya {
+	width: 50%;
+	height: 50%;
+	position: relative;
+	bottom: 18%;
+}
+
+#XMLID_2_ {
+	transform-origin: center center 0;
+}
+
+#ashi1 {
+	transform-origin: 90% 2% 0;
+}
+
+#ashi2 {
+	transform-origin: 20% 2% 0;
+}
+
+#body {
+	transform-origin: center 70% 0;
+}
+
+.ground {
+	position: relative;
+	height: 20%;
+	width: 100%;
+	background-color: #000;
+	top: 80%;
+}
+
+.people {
+	width: 25%;
+	height: 25%;
+	position: relative;
+	bottom: 18%;
+}
+
+#ashi3 {
+	transform-origin: 80% 5% 0;
+}
+
+#ashi4 {
+	transform-origin: 20% 3% 0;
+}
+
+#ude1 {
+	transform-origin: 90% 10% 0;
+}
+
+#ude2 {
+	transform-origin: 5% 5% 0;
+}
+
+#home {
+	width: 65%;
+	height: 65%;
+	bottom: 19%;
+	transform-origin: center 100% 0;
+}
+
+.end {
+	z-index: 1;
+	font-family: "Mplus 1p";
+	position: absolute;
+	left: 56%;
+	top: 10%;
+	font-size: 250px;
+}
+
+.end2 {
+	z-index: 1;
+	font-family: "Mplus 1p";
+	position: absolute;
+	left: 56.5%;
+	top: 10.5%;
+	font-size: 250px;
+}
+
+.role {
+	margin-left: 5%;
+	z-index: 10;
+	font-weight: bold;
+	position: absolute;
+	text-align: center;
+	line-height: 150px;
+	letter-spacing: 20px;
+	font-size: 40px;
+}
+
+.list {
+	list-style: none;
 }
